@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher</title>
+</head>
+<body>
+    <h1>Caesar Cipher Encryption/Decryption</h1>
+    <h2>Are you encrypting or decrypting a message?</h2>
+    <button type="button" id="encrypt_button">Encrypt</button>
+    <button type="button" id="decrypt_button">Decrypt</button>
+    <br>
+    <br>
+    <form id="cipherForm">
+        <h3>Message</h3>
+        <label for="message">Enter your message:</label>
+        <input type="text" id="message">
+        <br>
+        <h3>Cipher</h3>
+        <h4>*If you are decrypting, the direction is the direction of the actual cipher, not the opposite</h4>
+        <label for="shift">Enter shift value:</label>
+        <input type="number" id="shift">
+        <br>
+        <label for="direction">Select direction:</label>
+        <select id="direction">
+            <option value="right">Right</option>
+            <option value="left">Left</option>
+        </select>
+        <br>
+        <br>
+        <button type="button" onclick="processCipher()" id="encrypt_or_decrypt_button">Encrypt</button>
+    </form>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
